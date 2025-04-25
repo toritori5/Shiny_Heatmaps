@@ -1,6 +1,6 @@
 library(shiny)
 # The following packages are required for this app.
-required_packages <- c("readxl", "pheatmap", "dplyr", "tibble")
+required_packages <- c("readxl", "pheatmap", "dplyr", "tibble", "viridis")
 
 # Check if the packages are installed. If not, install them.
 for (package in required_packages) {
@@ -13,6 +13,7 @@ library(readxl)
 library(pheatmap)
 library(dplyr)
 library(tibble)
+library(viridis)
 
 # Increase the maximum file upload size to 10.2 MB (approximately)
 options(shiny.maxRequestSize = 10.2 * 1024^2)
